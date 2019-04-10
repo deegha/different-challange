@@ -1,0 +1,21 @@
+.default {
+  padding: 5px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.primary {
+  composes: default;
+  background-color: #ff4757;
+  color: #fff;
+
+  &:hover {
+    background-color: #ff4757;
+  }
+}
+
+.secondary {
+  composes: default;
+  background-color: #ED4C67;
+  color: #00bcd4;
+}
