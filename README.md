@@ -1,8 +1,8 @@
-## Code challenge
+## Code challenge - web
 
 ### OverView
 
-This application is done using Create React app since it would much easire to start working on. All the React components in this application is tested with propTypes.  All the reducers and presentational components are covered with unit testing.
+This application is done using Create React app, since it would much easire to start working on. All the React components in this application are tested with propTypes.  All the reducers and presentational components are covered with unit testing.
 
 ### Prerequisites
 - npm version 5.6.0 or higher 
@@ -20,6 +20,7 @@ This application is done using Create React app since it would much easire to st
 - Enzyme: for testing components
 - moment js: to calculate date and time
 - css module: to add prefix to class names
+- Redux: for state management
 
 ### Unit testing
 
