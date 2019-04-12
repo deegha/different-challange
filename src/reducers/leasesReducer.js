@@ -29,6 +29,7 @@ export const leasesReducer = (state=initilState, action) => {
       return {
         ...state,
         loading: false,
+        hasData: false,
         error: {
           hasError: true,
           errorMessage: action.error
@@ -39,6 +40,7 @@ export const leasesReducer = (state=initilState, action) => {
         ...state,
         loading: false,
         leases: action.leases,
+        hasData: true,
         error: {
           hasError: false,
           errorMessage: ''

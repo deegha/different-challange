@@ -12,14 +12,6 @@ const initialSate = {
     hasError: false,
     errorMessage: ''
   },
-  leaseData: {
-    id: null,
-    start_date: '',
-    end_date: '',
-    rent: null,
-    frequency: '',
-    payment_day: ''
-  },
   lease: []
 }
 
@@ -42,7 +34,7 @@ export const activeLeaseReducer = (state=initialSate, action) => {
         hasData: false
       }
     case Actions.FETCH_ACTIVE_LEASES_SUCCESS:
-      formatLease()
+      
       return {
         ...state,
         loading: false,
@@ -51,7 +43,7 @@ export const activeLeaseReducer = (state=initialSate, action) => {
           errorMessage: ''
         },
         hasData: true,
-        leaseData: action.lease
+        lease: formatLease(action.lease)
       }
     default:
       return state

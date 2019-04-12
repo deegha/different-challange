@@ -16,7 +16,6 @@ class LeasePage extends React.Component {
   }
 
   render() {
-    console.log(this.props.activelease)
     return(
      <LeasePageView {...this.props.activelease} />
     ) 
