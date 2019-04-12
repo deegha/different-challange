@@ -39,6 +39,6 @@ export const fetchLeases = () => async (dispatch) => {
     const response = await backendClient.get('leases', 'v1')
     dispatch(fetchLeasesSuccess(response))
   }catch(err) {
-    dispatch(fethLeasesFail(err))
+    dispatch(fethLeasesFail('Somthing went wrong please try again'))
   }
 }

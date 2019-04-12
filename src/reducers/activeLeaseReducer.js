@@ -34,7 +34,6 @@ export const activeLeaseReducer = (state=initialSate, action) => {
         hasData: false
       }
     case Actions.FETCH_ACTIVE_LEASES_SUCCESS:
-      
       return {
         ...state,
         loading: false,

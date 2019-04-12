@@ -37,6 +37,6 @@ export const fetchActiveLease = (id) => async (dispatch) => {
     const response = await backendClient.get(`leases/${id}`, 'v1')
     dispatch(fetchActiveLeaseSuccess(response))
   }catch(err) {
-    dispatch(fethActiveLeaseFail(err))
+    dispatch(fethActiveLeaseFail('somthing went wrong, please try again'))
   }
 }
